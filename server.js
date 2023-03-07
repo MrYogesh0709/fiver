@@ -16,7 +16,7 @@ const app = express();
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 // app.use(cookieParser(process.env.JWT_KEY));
-app.use(cookieParser(process.env.JWT_KEY));
+app.use(cookieParser());
 
 const connect = async () => {
   try {
