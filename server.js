@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser(process.env.JWT_KEY));
 
 const connect = async () => {
   try {

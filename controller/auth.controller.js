@@ -32,7 +32,7 @@ const login = async (req, res, next) => {
       .cookie("accessToken", token, {
         httpOnly: true,
         secure: process.env.JWT_KEY === "production",
-        domain: ".netlify.app",
+        domain: "https://fiver-front.netlify.app",
         path: "/",
       })
       .status(200)
