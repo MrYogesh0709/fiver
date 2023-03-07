@@ -33,6 +33,7 @@ const login = async (req, res, next) => {
         httpOnly: true,
         secure: true,
         domain: ".netlify.app",
+        path: "/",
       })
       .status(200)
       .json({ info });
