@@ -32,7 +32,7 @@ const login = async (req, res, next) => {
       .cookie("accessToken", token, {
         httpOnly: true,
         secure: true,
-        domain: ".netlify.app",
+        domain: "https://fiver-back.onrender.com",
         sameSite: "none",
         path: "/",
       })
