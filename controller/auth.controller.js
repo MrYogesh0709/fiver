@@ -33,7 +33,6 @@ const login = async (req, res, next) => {
         httpOnly: true,
         sameSite: process.env.NODE_ENV === "Development" ? "lax" : "none",
         secure: process.env.NODE_ENV === "Development" ? false : true,
-        // domain: ".netlify.app",
       })
       .status(200)
       .json({ info });
