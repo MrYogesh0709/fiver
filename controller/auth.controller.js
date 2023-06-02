@@ -45,8 +45,9 @@ const logout = async (req, res) => {
   try {
     res
       .clearCookie("accessToken", {
-        sameSite: "none",
-        secure: true,
+        httpOnly: true,
+        sameSite: process.env.NODE_ENV === "Development" ? "lax" : "none",
+        secure: process.env.NODE_ENV === "Development" ? false : true,
       })
       .status(200)
       .send("User has been logged out");
