@@ -21,8 +21,6 @@ STRIPE_KEY=YOUR_STRIPE_KEY
 npm start
 ```
 
-create your build file for production mode:
-
 FRONTEND OF THIS PROJECT IS:-
 
 https://github.com/MrYogesh0709/fiverr-front
